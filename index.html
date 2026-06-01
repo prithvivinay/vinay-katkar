@@ -172,6 +172,15 @@ section{padding:80px 24px}
 .timeline-period{font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--terracotta);font-weight:500;margin-bottom:4px}
 .timeline-role{font-weight:500;color:var(--text-primary);margin-bottom:4px;font-size:0.95rem}
 .timeline-desc{color:var(--text-secondary);font-size:0.85rem;line-height:1.6}
+.timeline-meta{font-size:0.78rem;color:var(--terracotta);font-weight:500;margin-bottom:6px;letter-spacing:0.02em}
+.timeline-summary{color:var(--text-secondary);font-size:0.85rem;line-height:1.65;margin-bottom:8px}
+.timeline-bullets{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:5px}
+.timeline-bullets li{position:relative;padding-left:14px;font-size:0.82rem;color:var(--text-secondary);line-height:1.55}
+.timeline-bullets li::before{content:'·';position:absolute;left:0;top:0;color:var(--terracotta);font-weight:700;font-size:1rem;line-height:1.3}
+.timeline-projects{margin-top:8px}
+.timeline-projects-label{font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-secondary);font-weight:600;margin-bottom:6px}
+.timeline-project-row{font-size:0.78rem;color:var(--text-secondary);padding:3px 0;border-bottom:1px solid var(--sand)}
+.timeline-project-row:last-child{border-bottom:none}
 
 /* SKILLS */
 #skills{background:var(--soft-beige)}
@@ -347,42 +356,116 @@ footer{background:var(--text-primary);color:rgba(255,255,255,0.5);text-align:cen
       <div class="stat-card"><div class="stat-value" style="font-size:1.4rem">High-Rise</div><div class="stat-label">Specialisation</div></div>
       <div class="stat-card"><div class="stat-value" style="font-size:1.4rem">Mumbai &amp; Pune</div><div class="stat-label">Footprint</div></div>
     </div>
-    <div class="timeline">
+    <div class="timeline" style="grid-template-columns:1fr">
+      
+      <!-- 1. Stellar -->
       <div class="timeline-item">
         <div class="timeline-period">Dec 2025 – Present</div>
-        <div class="timeline-role">Stellar | Nitin Company, Thane</div>
-        <div class="timeline-desc">Leading project development, coordinating execution teams, managing workflows and implementation oversight</div>
+        <div class="timeline-role">Team Leader / Project Manager — Stellar Project / Pershi Infra</div>
+        <div class="timeline-meta">Panchpakhadi, Thane · High-Rise Residential Tower</div>
+        <div class="timeline-summary">High-rise residential tower currently under construction. Responsible for overall site leadership — directing multi-disciplinary teams, setting weekly work programmes, and maintaining sequenced progress across structural, MEP, and finishing activities to ensure milestone adherence.</div>
+        <ul class="timeline-bullets">
+          <li>Leading day-to-day execution and coordinating with Architects, RCC (Mivan Shuttering) and MEP Consultants for technical clarifications and drawing revisions</li>
+          <li>Managing subcontractor deployment, monitoring productivity, and enforcing contractual obligations on quality and schedule</li>
+          <li>Overseeing workflow planning, resource allocation, and progress reporting to senior management</li>
+        </ul>
       </div>
+
+      <!-- 2. Addi Shikhar -->
       <div class="timeline-item">
-        <div class="timeline-period">Jul 2025 – Oct 2025</div>
-        <div class="timeline-role">Team Leader — Addi Shikhar Arpan &amp; Arpan NX, Sion</div>
-        <div class="timeline-desc">Overseeing luxury high-rise with 19 residential floors, rooftop pool, basement and podium parking</div>
+        <div class="timeline-period">July 2025 – Oct 2025</div>
+        <div class="timeline-role">Team Leader — Addi Shikhar · Arpan &amp; Arpan NX</div>
+        <div class="timeline-meta">Sion, Mumbai · 1,50,000 sq. ft. | Basement + Ground + Podium Parking + 19 Residential Levels + Rooftop Terrace with Swimming Pool</div>
+        <div class="timeline-summary">Complex urban redevelopment involving basement excavation, podium-level car parking, and 19 floors of residential accommodation topped by a rooftop amenity deck with swimming pool. Multi-agency coordination across tight site constraints typical of Sion.</div>
+        <ul class="timeline-bullets">
+          <li>Coordinating structural, MEP, and finishing contractors across simultaneous floor levels</li>
+          <li>Monitoring RCC pours, formwork cycles, and shuttering schedules to maintain structural programme</li>
+          <li>Ensuring compliance with approved drawings and consultant specifications at each stage of execution</li>
+        </ul>
       </div>
+
+      <!-- 3. Bhakti Group -->
       <div class="timeline-item">
-        <div class="timeline-period">2005 – 2025</div>
-        <div class="timeline-role">Project Manager → Team Leader | Bhakti Group</div>
-        <div class="timeline-desc">Led multiple residential high-rises across Chembur and Mumbai, executing 6+ major projects across 20 years</div>
+        <div class="timeline-period">Dec 2005 – 2025</div>
+        <div class="timeline-role">Project Manager — Bhakti Group &amp; Pooja Enterprises</div>
+        <div class="timeline-meta">Bhakti Developers / Bhakti Buildwell / Bhakti Homes / Bhakti Enterprises · Tilak Nagar Chembur, Kandivali, Ambernath &amp; Warje Pune · 20+ Years | 9,00,000+ sq. ft. | Residential &amp; Industrial</div>
+        <div class="timeline-summary">Progressed from Junior Engineer to Project Manager, leading end-to-end execution of large-scale residential and industrial developments across multiple locations in Maharashtra. Managed multi-wing housing projects, long-duration township developments, and industrial construction from planning through handover.</div>
+        <div class="timeline-projects">
+          <div class="timeline-projects-label">Projects Delivered</div>
+          <div class="timeline-project-row">Bhakti Heights — 2,15,000 sq. ft. | 5 Wings | 2005–2010</div>
+          <div class="timeline-project-row">Bhakti Residency — 70,000 sq. ft. | 1 Wing | 2009–2014</div>
+          <div class="timeline-project-row">SRA Project — 1,25,000 sq. ft. | 2 Wings | 2014–2018</div>
+          <div class="timeline-project-row">La Lavado Fabrika, Ambernath MIDC — 1,15,000 sq. ft. | Industrial | 2008–2011</div>
+          <div class="timeline-project-row">Midas Bhakti Meadows — 90,000 sq. ft. | 2 Wings | 2016–2025</div>
+          <div class="timeline-project-row">Bhakti Pride — 1,20,000 sq. ft. | 2 Wings | 2024–2025</div>
+          <div class="timeline-project-row">Pooja Enclave — 2,25,000+ sq. ft. | 5 Wings | 2005–2007</div>
+        </div>
+        <ul class="timeline-bullets" style="margin-top:10px">
+          <li>End-to-end project execution from excavation, substructure, RCC works, MEP coordination, finishing, to final handover</li>
+          <li>Site planning, bar chart scheduling, work-front planning, and execution monitoring across multiple project phases</li>
+          <li>Subcontractor appointment, quotation evaluation, bill certification, BOQ reconciliation, and cost control</li>
+          <li>RMC scheduling, concrete pour planning, quantity tracking, and material reconciliation</li>
+          <li>Coordination with architects, RCC consultants, MEP consultants, vendors, and site teams for smooth execution</li>
+          <li>Drawing interpretation, on-site technical problem-solving, and design coordination</li>
+          <li>Quality control, progress monitoring, and ensuring timely delivery within project schedules</li>
+        </ul>
       </div>
+
+      <!-- 4. Satellite + Shree Laxmi -->
       <div class="timeline-item">
-        <div class="timeline-period">1998 – 2005</div>
-        <div class="timeline-role">Jr. Engineer → Sr. Engineer → Project Manager | Satellite + Shree Laxmi Group</div>
-        <div class="timeline-desc">Progressed through ranks executing residential towers in Mulund West, Powai, and Kandivali</div>
+        <div class="timeline-period">2002 – 2005</div>
+        <div class="timeline-role">Senior Engineer / Project Manager — Satellite + Shree Laxmi Group</div>
+        <div class="timeline-meta">Tridev Tower &amp; Apartments · Mulund · 2,50,000+ sq. ft. | Residential</div>
+        <div class="timeline-summary">Progressed from Senior Engineer to Project Manager during this engagement, taking on increasing responsibility for RCC structural supervision and contractor coordination.</div>
+        <ul class="timeline-bullets">
+          <li>Assisted in bill certification, material reconciliation, and quality checks on structural pours</li>
+          <li>28-storey tower &amp; 15-storey 3 Wings &amp; Commercial Mall</li>
+        </ul>
       </div>
+
+      <!-- 5. Royal Classic & Royal Galaxy -->
+      <div class="timeline-item">
+        <div class="timeline-period">2003 – 2005</div>
+        <div class="timeline-role">Project Manager — Shree Laxmi Developers</div>
+        <div class="timeline-meta">Royal Classic &amp; Royal Galaxy · Mulund West / Thane · 1,20,000 sq. ft. each | Residential</div>
+        <div class="timeline-summary">Independently managed two concurrent residential projects for the same developer.</div>
+        <ul class="timeline-bullets">
+          <li>Handled complete execution, subcontractor management, and client-facing progress reporting</li>
+        </ul>
+      </div>
+
+      <!-- 6. Crystal Palace -->
       <div class="timeline-item">
         <div class="timeline-period">2000 – 2002</div>
-        <div class="timeline-role">Junior / Senior Engineer | G.H.P Corporation</div>
-        <div class="timeline-desc">Crystal Palace · Powai, Mumbai — 1,50,000 sq ft residential complex. Supervised RCC structural works across multiple wings. Supported Project Manager in bar chart preparation, material scheduling, and pour planning. Also executed a seven-storey building (Gambhir Bungalow) in front of Solitaire, Hiranandani Powai (30,000 sq ft).</div>
+        <div class="timeline-role">Senior Engineer / Project Manager — G.H.P Corporation</div>
+        <div class="timeline-meta">Crystal Palace · Powai, Mumbai · 2,50,000 sq. ft. | Residential</div>
+        <div class="timeline-summary">Supervised RCC structural works across multiple wings of a large residential complex in Powai.</div>
+        <ul class="timeline-bullets">
+          <li>Supported the Project Manager in bar chart preparation, material scheduling, and pour planning</li>
+          <li>Seven-storey building (Gambhir Bungalow) done in front of the Solitaire building, Hiranandani Powai (30,000 sq. ft.)</li>
+          <li>15-storey 2 Wings Building, 1 Tenant building, and Hotel and 8-storey building</li>
+        </ul>
       </div>
+
+      <!-- 7. IIIE -->
       <div class="timeline-item">
         <div class="timeline-period">Nov 1998 – 2000</div>
-        <div class="timeline-role">Institute Engineer | IIIE, CBD Belapur</div>
-        <div class="timeline-desc">Educational Institute Building (Government) · Sector 15, Navi Mumbai — 30,000 sq ft institutional project. Managed civil construction including structural works and finishing. Coordinated with the client institution for periodic progress reviews and snag resolution.</div>
+        <div class="timeline-role">Institute Engineer — IIIE</div>
+        <div class="timeline-meta">Educational Institute Building (Government) · CBD Belapur, Sector 15, Navi Mumbai · 30,000 sq. ft. | Institutional</div>
+        <div class="timeline-summary">Managed civil construction of an institutional building including structural works and finishing.</div>
+        <ul class="timeline-bullets">
+          <li>Coordinated with the client institution for periodic progress reviews and snag resolution</li>
+        </ul>
       </div>
+
+      <!-- 8. NITIE -->
       <div class="timeline-item">
         <div class="timeline-period">Jan 1998 – Nov 1998</div>
-        <div class="timeline-role">Junior Engineer | NITIE, Powai</div>
-        <div class="timeline-desc">Renovation &amp; Maintenance · Vihar Lake, Mumbai — ESP Hostel &amp; All Campus Buildings. Carried out renovation and maintenance works across the NITIE campus, gaining early exposure to occupied-building site management and coordinating with institutional facilities teams.</div>
+        <div class="timeline-role">Junior Engineer — NITIE</div>
+        <div class="timeline-meta">Renovation &amp; Maintenance · Powai, Vihar Lake, Mumbai · ESP Hostel &amp; All Campus Buildings</div>
+        <div class="timeline-summary">Carried out renovation and maintenance works across the NITIE campus, gaining early exposure to occupied-building site management and coordinating with institutional facilities teams.</div>
       </div>
+
     </div>
   </div>
 </section>
